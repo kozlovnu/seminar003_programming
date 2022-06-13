@@ -13,9 +13,17 @@ int y1 = Input("Введите координату y1: ");
 int x2 = Input("Введите координату х2: ");
 int y2 = Input("Введите координату y2: ");
 
-int lineX = x2 - x1;
-int lineY = y2 - y1;
+int lineX = Distance(x1, x2);
+int lineY = Distance(x2, y2);
 
 Console.WriteLine(Math.Sqrt((lineX*lineX) + lineY*lineY));
 
+int Distance(int a, int b) // метод нахождения расстояния между точками
+{
+    return a - b;
+}
 
+int Square (int a) // метод для нахождения квадрата
+{
+    return a * a;
+}
